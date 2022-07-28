@@ -1,5 +1,5 @@
 <template>
-  <el-carousel trigger="click" arrow="hover" height="250px" ref="carousel">
+  <el-carousel trigger="click" arrow="hover" ref="carousel">
     <el-carousel-item v-for="(item, index) in banners" :key="index">
       <a :href="item.link">
         <img :src="item.image" alt="" @load="imgLoad" />
@@ -110,7 +110,7 @@ export default {
 }
 img {
   height: 100%;
-  /* width: 100%; */
+  width: 100%;
   object-fit: cover;
   vertical-align: middle;
 }
