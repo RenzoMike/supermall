@@ -49,6 +49,7 @@ export default {
   margin: 10px 0;
   padding-bottom: 20px;
   border-bottom: 8px solid rgb(212, 212, 212);
+  z-index: 11;
 }
 .recommend-item {
   flex: 1;

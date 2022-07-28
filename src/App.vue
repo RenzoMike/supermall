@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <router-view />
-    <h6>hello</h6>
+    <!-- // 排除在外exclude="Detail" -->
+    <keep-alive exclude="Detail">
+      <router-view />
+    </keep-alive>
     <main-tab-bar></main-tab-bar>
   </div>
 </template>
